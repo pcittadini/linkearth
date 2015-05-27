@@ -1,0 +1,195 @@
+# Project: LinkEarth
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 6.10.2 on 05/02/09 15.49
+
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = windres.exe
+OBJ       = Objects/MingW/GetConf.o Objects/MingW/GetStringInLine.o Objects/MingW/MenuGraph.o Objects/MingW/MenuGraph_Mod.o Objects/MingW/MenuGraph_Mod_AddNode.o Objects/MingW/MenuGraph_Mod_Ark.o Objects/MingW/MenuGraph_Mod_Delete.o Objects/MingW/MenuGraph_Mod_Hub.o Objects/MingW/MenuGraph_Mod_LD.o Objects/MingW/MenuGraph_Path.o Objects/MingW/MenuGraph_Path_View.o Objects/MingW/MenuGraph_View.o Objects/MingW/MenuOption.o Objects/MingW/MenuTree.o Objects/MingW/MenuTree\ _View.o Objects/MingW/MenuTree_Level.o Objects/MingW/SetConf.o Objects/MingW/EraseNode.o Objects/MingW/FreeGraph.o Objects/MingW/GeoDist.o Objects/MingW/LinkLD.o Objects/MingW/LinkLOCALS.o Objects/MingW/NewArk.o Objects/MingW/NewHUB.o Objects/MingW/NewNode.o Objects/MingW/Path.o Objects/MingW/SearchNode.o Objects/MingW/StackToGraph.o Objects/MingW/_DispBackground.o Objects/MingW/DispBackground.o Objects/MingW/DispForeground.o Objects/MingW/DispGraph.o Objects/MingW/DispPopup.o Objects/MingW/DispTree.o Objects/MingW/Splash.o Objects/MingW/_Gotoxy.o Objects/MingW/ClearScreen.o Objects/MingW/Color.o Objects/MingW/CPrintf.o Objects/MingW/Getch.o Objects/MingW/GetKey.o Objects/MingW/Gotoxy.o Objects/MingW/Yawn.o Objects/MingW/STACK.o Objects/MingW/FreeTree.o Objects/MingW/IsTag.o Objects/MingW/LcOpen.o Objects/MingW/LeafsToStack.o Objects/MingW/LoadLeaf.o Objects/MingW/NewLeaf.o Objects/MingW/PopChar.o Objects/MingW/ReadClass.o Objects/MingW/StackToTree.o Objects/MingW/Visit.o Objects/MingW/LinkEarth.o
+LINKOBJ   = Objects/MingW/GetConf.o Objects/MingW/GetStringInLine.o Objects/MingW/MenuGraph.o Objects/MingW/MenuGraph_Mod.o Objects/MingW/MenuGraph_Mod_AddNode.o Objects/MingW/MenuGraph_Mod_Ark.o Objects/MingW/MenuGraph_Mod_Delete.o Objects/MingW/MenuGraph_Mod_Hub.o Objects/MingW/MenuGraph_Mod_LD.o Objects/MingW/MenuGraph_Path.o Objects/MingW/MenuGraph_Path_View.o Objects/MingW/MenuGraph_View.o Objects/MingW/MenuOption.o Objects/MingW/MenuTree.o "Objects/MingW/MenuTree _View.o" Objects/MingW/MenuTree_Level.o Objects/MingW/SetConf.o Objects/MingW/EraseNode.o Objects/MingW/FreeGraph.o Objects/MingW/GeoDist.o Objects/MingW/LinkLD.o Objects/MingW/LinkLOCALS.o Objects/MingW/NewArk.o Objects/MingW/NewHUB.o Objects/MingW/NewNode.o Objects/MingW/Path.o Objects/MingW/SearchNode.o Objects/MingW/StackToGraph.o Objects/MingW/_DispBackground.o Objects/MingW/DispBackground.o Objects/MingW/DispForeground.o Objects/MingW/DispGraph.o Objects/MingW/DispPopup.o Objects/MingW/DispTree.o Objects/MingW/Splash.o Objects/MingW/_Gotoxy.o Objects/MingW/ClearScreen.o Objects/MingW/Color.o Objects/MingW/CPrintf.o Objects/MingW/Getch.o Objects/MingW/GetKey.o Objects/MingW/Gotoxy.o Objects/MingW/Yawn.o Objects/MingW/STACK.o Objects/MingW/FreeTree.o Objects/MingW/IsTag.o Objects/MingW/LcOpen.o Objects/MingW/LeafsToStack.o Objects/MingW/LoadLeaf.o Objects/MingW/NewLeaf.o Objects/MingW/PopChar.o Objects/MingW/ReadClass.o Objects/MingW/StackToTree.o Objects/MingW/Visit.o Objects/MingW/LinkEarth.o
+LIBS      = -L"C:/Program Files/Dev-Cpp/Lib" -L"C:/Users/Morris/Documents/Progetti personali/PROVA/libs"  
+INCS      = -I"include"
+CXXINCS   = -I"C:/Program Files/Dev-Cpp/lib/gcc/mingw32/3.4.2/include" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.2/backward" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.2/mingw32" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.2" -I"C:/Program Files/Dev-Cpp/include" -I"C:/Program Files/Dev-Cpp/" -I"C:/Program Files/Dev-Cpp/include/common/wx/msw" -I"C:/Program Files/Dev-Cpp/include/common/wx/generic" -I"C:/Program Files/Dev-Cpp/include/common/wx/fl" -I"C:/Program Files/Dev-Cpp/include/common/wx/gizmos" -I"C:/Program Files/Dev-Cpp/include/common/wx/html" -I"C:/Program Files/Dev-Cpp/include/common/wx/mmedia" -I"C:/Program Files/Dev-Cpp/include/common/wx/net" -I"C:/Program Files/Dev-Cpp/include/common/wx/ogl" -I"C:/Program Files/Dev-Cpp/include/common/wx/plot" -I"C:/Program Files/Dev-Cpp/include/common/wx/protocol" -I"C:/Program Files/Dev-Cpp/include/common/wx/stc" -I"C:/Program Files/Dev-Cpp/include/common/wx/svg" -I"C:/Program Files/Dev-Cpp/include/common/wx/xml" -I"C:/Program Files/Dev-Cpp/include/common/wx/xrc" -I"C:/Program Files/Dev-Cpp/include/common/wx" -I"C:/Program Files/Dev-Cpp/include/common"
+RCINCS    = --include-dir "C:/PROGRA~1/Dev-Cpp/include/common"
+BIN       = Output/MingW/LinkEarth.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = gcc.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "Output\MingW\LinkEarth.exe" $(LIBS)
+
+Objects/MingW/GetConf.o: $(GLOBALDEPS) ../Gestione/GetConf.c ../lib/platform/platform.h ../include/lcfile.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../Gestione/GetConf.c -o Objects/MingW/GetConf.o $(CFLAGS)
+
+Objects/MingW/GetStringInLine.o: $(GLOBALDEPS) ../Gestione/GetStringInLine.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h ../lib/platform/platform.h
+	$(CC) -c ../Gestione/GetStringInLine.c -o Objects/MingW/GetStringInLine.o $(CFLAGS)
+
+Objects/MingW/MenuGraph.o: $(GLOBALDEPS) ../Gestione/MenuGraph.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph.c -o Objects/MingW/MenuGraph.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod.c -o Objects/MingW/MenuGraph_Mod.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod_AddNode.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod_AddNode.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod_AddNode.c -o Objects/MingW/MenuGraph_Mod_AddNode.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod_Ark.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod_Ark.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod_Ark.c -o Objects/MingW/MenuGraph_Mod_Ark.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod_Delete.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod_Delete.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod_Delete.c -o Objects/MingW/MenuGraph_Mod_Delete.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod_Hub.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod_Hub.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod_Hub.c -o Objects/MingW/MenuGraph_Mod_Hub.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Mod_LD.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Mod_LD.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Mod_LD.c -o Objects/MingW/MenuGraph_Mod_LD.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Path.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Path.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Path.c -o Objects/MingW/MenuGraph_Path.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_Path_View.o: $(GLOBALDEPS) ../Gestione/MenuGraph_Path_View.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_Path_View.c -o Objects/MingW/MenuGraph_Path_View.o $(CFLAGS)
+
+Objects/MingW/MenuGraph_View.o: $(GLOBALDEPS) ../Gestione/MenuGraph_View.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Gestione/MenuGraph_View.c -o Objects/MingW/MenuGraph_View.o $(CFLAGS)
+
+Objects/MingW/MenuOption.o: $(GLOBALDEPS) ../Gestione/MenuOption.c ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../Gestione/MenuOption.c -o Objects/MingW/MenuOption.o $(CFLAGS)
+
+Objects/MingW/MenuTree.o: $(GLOBALDEPS) ../Gestione/MenuTree.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../Gestione/MenuTree.c -o Objects/MingW/MenuTree.o $(CFLAGS)
+
+Objects/MingW/MenuTree\ _View.o: $(GLOBALDEPS) ../Gestione/MenuTree\ _View.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c "../Gestione/MenuTree _View.c" -o "Objects/MingW/MenuTree _View.o" $(CFLAGS)
+
+Objects/MingW/MenuTree_Level.o: $(GLOBALDEPS) ../Gestione/MenuTree_Level.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../Gestione/MenuTree_Level.c -o Objects/MingW/MenuTree_Level.o $(CFLAGS)
+
+Objects/MingW/SetConf.o: $(GLOBALDEPS) ../Gestione/SetConf.c ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../Gestione/SetConf.c -o Objects/MingW/SetConf.o $(CFLAGS)
+
+Objects/MingW/EraseNode.o: $(GLOBALDEPS) ../Graph/EraseNode.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/EraseNode.c -o Objects/MingW/EraseNode.o $(CFLAGS)
+
+Objects/MingW/FreeGraph.o: $(GLOBALDEPS) ../Graph/FreeGraph.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/FreeGraph.c -o Objects/MingW/FreeGraph.o $(CFLAGS)
+
+Objects/MingW/GeoDist.o: $(GLOBALDEPS) ../Graph/GeoDist.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/GeoDist.c -o Objects/MingW/GeoDist.o $(CFLAGS)
+
+Objects/MingW/LinkLD.o: $(GLOBALDEPS) ../Graph/LinkLD.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/LinkLD.c -o Objects/MingW/LinkLD.o $(CFLAGS)
+
+Objects/MingW/LinkLOCALS.o: $(GLOBALDEPS) ../Graph/LinkLOCALS.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/LinkLOCALS.c -o Objects/MingW/LinkLOCALS.o $(CFLAGS)
+
+Objects/MingW/NewArk.o: $(GLOBALDEPS) ../Graph/NewArk.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/NewArk.c -o Objects/MingW/NewArk.o $(CFLAGS)
+
+Objects/MingW/NewHUB.o: $(GLOBALDEPS) ../Graph/NewHUB.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/NewHUB.c -o Objects/MingW/NewHUB.o $(CFLAGS)
+
+Objects/MingW/NewNode.o: $(GLOBALDEPS) ../Graph/NewNode.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/NewNode.c -o Objects/MingW/NewNode.o $(CFLAGS)
+
+Objects/MingW/Path.o: $(GLOBALDEPS) ../Graph/Path.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../Graph/Path.c -o Objects/MingW/Path.o $(CFLAGS)
+
+Objects/MingW/SearchNode.o: $(GLOBALDEPS) ../Graph/SearchNode.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/SearchNode.c -o Objects/MingW/SearchNode.o $(CFLAGS)
+
+Objects/MingW/StackToGraph.o: $(GLOBALDEPS) ../Graph/StackToGraph.c ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../Graph/StackToGraph.c -o Objects/MingW/StackToGraph.o $(CFLAGS)
+
+Objects/MingW/_DispBackground.o: $(GLOBALDEPS) ../GUI/_DispBackground.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/_DispBackground.c -o Objects/MingW/_DispBackground.o $(CFLAGS)
+
+Objects/MingW/DispBackground.o: $(GLOBALDEPS) ../GUI/DispBackground.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/DispBackground.c -o Objects/MingW/DispBackground.o $(CFLAGS)
+
+Objects/MingW/DispForeground.o: $(GLOBALDEPS) ../GUI/DispForeground.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/DispForeground.c -o Objects/MingW/DispForeground.o $(CFLAGS)
+
+Objects/MingW/DispGraph.o: $(GLOBALDEPS) ../GUI/DispGraph.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/DispGraph.c -o Objects/MingW/DispGraph.o $(CFLAGS)
+
+Objects/MingW/DispPopup.o: $(GLOBALDEPS) ../GUI/DispPopup.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/DispPopup.c -o Objects/MingW/DispPopup.o $(CFLAGS)
+
+Objects/MingW/DispTree.o: $(GLOBALDEPS) ../GUI/DispTree.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/DispTree.c -o Objects/MingW/DispTree.o $(CFLAGS)
+
+Objects/MingW/Splash.o: $(GLOBALDEPS) ../GUI/Splash.c ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h ../include/tree.h
+	$(CC) -c ../GUI/Splash.c -o Objects/MingW/Splash.o $(CFLAGS)
+
+Objects/MingW/_Gotoxy.o: $(GLOBALDEPS) ../lib/platform/_Gotoxy.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/_Gotoxy.c -o Objects/MingW/_Gotoxy.o $(CFLAGS)
+
+Objects/MingW/ClearScreen.o: $(GLOBALDEPS) ../lib/platform/ClearScreen.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/ClearScreen.c -o Objects/MingW/ClearScreen.o $(CFLAGS)
+
+Objects/MingW/Color.o: $(GLOBALDEPS) ../lib/platform/Color.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/Color.c -o Objects/MingW/Color.o $(CFLAGS)
+
+Objects/MingW/CPrintf.o: $(GLOBALDEPS) ../lib/platform/CPrintf.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/CPrintf.c -o Objects/MingW/CPrintf.o $(CFLAGS)
+
+Objects/MingW/Getch.o: $(GLOBALDEPS) ../lib/platform/Getch.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/Getch.c -o Objects/MingW/Getch.o $(CFLAGS)
+
+Objects/MingW/GetKey.o: $(GLOBALDEPS) ../lib/platform/GetKey.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/GetKey.c -o Objects/MingW/GetKey.o $(CFLAGS)
+
+Objects/MingW/Gotoxy.o: $(GLOBALDEPS) ../lib/platform/Gotoxy.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/Gotoxy.c -o Objects/MingW/Gotoxy.o $(CFLAGS)
+
+Objects/MingW/Yawn.o: $(GLOBALDEPS) ../lib/platform/Yawn.c ../lib/platform/platform.h
+	$(CC) -c ../lib/platform/Yawn.c -o Objects/MingW/Yawn.o $(CFLAGS)
+
+Objects/MingW/STACK.o: $(GLOBALDEPS) ../lib/stack/STACK.c ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../lib/stack/STACK.c -o Objects/MingW/STACK.o $(CFLAGS)
+
+Objects/MingW/FreeTree.o: $(GLOBALDEPS) ../Tree/FreeTree.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../Tree/FreeTree.c -o Objects/MingW/FreeTree.o $(CFLAGS)
+
+Objects/MingW/IsTag.o: $(GLOBALDEPS) ../Tree/IsTag.c ../include/lcfile.h
+	$(CC) -c ../Tree/IsTag.c -o Objects/MingW/IsTag.o $(CFLAGS)
+
+Objects/MingW/LcOpen.o: $(GLOBALDEPS) ../Tree/LcOpen.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../include/lcfile.h
+	$(CC) -c ../Tree/LcOpen.c -o Objects/MingW/LcOpen.o $(CFLAGS)
+
+Objects/MingW/LeafsToStack.o: $(GLOBALDEPS) ../Tree/LeafsToStack.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../Tree/LeafsToStack.c -o Objects/MingW/LeafsToStack.o $(CFLAGS)
+
+Objects/MingW/LoadLeaf.o: $(GLOBALDEPS) ../Tree/LoadLeaf.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../include/lcfile.h
+	$(CC) -c ../Tree/LoadLeaf.c -o Objects/MingW/LoadLeaf.o $(CFLAGS)
+
+Objects/MingW/NewLeaf.o: $(GLOBALDEPS) ../Tree/NewLeaf.c ../include/tree.h
+	$(CC) -c ../Tree/NewLeaf.c -o Objects/MingW/NewLeaf.o $(CFLAGS)
+
+Objects/MingW/PopChar.o: $(GLOBALDEPS) ../Tree/PopChar.c
+	$(CC) -c ../Tree/PopChar.c -o Objects/MingW/PopChar.o $(CFLAGS)
+
+Objects/MingW/ReadClass.o: $(GLOBALDEPS) ../Tree/ReadClass.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h ../include/lcfile.h
+	$(CC) -c ../Tree/ReadClass.c -o Objects/MingW/ReadClass.o $(CFLAGS)
+
+Objects/MingW/StackToTree.o: $(GLOBALDEPS) ../Tree/StackToTree.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../Tree/StackToTree.c -o Objects/MingW/StackToTree.o $(CFLAGS)
+
+Objects/MingW/Visit.o: $(GLOBALDEPS) ../Tree/Visit.c ../include/libtree.h ../include/tree.h ../lib/stack/libstack.h ../lib/stack/stack.h
+	$(CC) -c ../Tree/Visit.c -o Objects/MingW/Visit.o $(CFLAGS)
+
+Objects/MingW/LinkEarth.o: $(GLOBALDEPS) ../LinkEarth.c ../lib/stack/libstack.h ../lib/stack/stack.h ../include/libgraph.h ../include/graph.h ../include/tree.h ../lib/stack/stack.h ../lib/platform/platform.h ../include/GUI.h ../lib/platform/platform.h ../lib/stack/stack.h ../include/tree.h ../include/graph.h
+	$(CC) -c ../LinkEarth.c -o Objects/MingW/LinkEarth.o $(CFLAGS)
